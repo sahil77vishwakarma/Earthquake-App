@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/refresh"
+        android:title="Refresh"
+        android:icon="@drawable/baseline_refresh_24"
+        android:contentDescription="Refresh"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/filter"
+        android:title="Filter"
+        android:icon="@drawable/toolbar_filter_vector"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/more"
+        android:title="More"
+        android:contentDescription="More"
+        app:showAsAction="never"/>
+
+</menu>

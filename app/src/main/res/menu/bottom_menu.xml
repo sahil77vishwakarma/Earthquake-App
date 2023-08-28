@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_news"
+        android:title="News"
+        android:icon="@drawable/news_vector_asset"/>
+    <item
+        android:id="@+id/bottom_latest"
+        android:title="Latest"
+        android:icon="@drawable/news_vector_asset"/>
+
+    <item
+        android:id="@+id/bottom_map"
+        android:title="Maps"
+        android:icon="@drawable/news_vector_asset"/>
+
+    <item
+        android:id="@+id/bottom_measures"
+        android:title="Measures"
+        android:icon="@drawable/news_vector_asset"/>
+</menu>
