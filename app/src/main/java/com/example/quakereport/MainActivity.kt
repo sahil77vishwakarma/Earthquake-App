@@ -1,6 +1,6 @@
 package com.example.quakereport
 
-import news.NewsFragment
+import com.example.quakereport.news.NewsFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -11,6 +11,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.example.quakereport.Latest.LatestFragment
 import com.example.quakereport.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -70,7 +71,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
 
     //// Handling the on clicks of the Navigation drawer
-    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {3
         when (item.itemId) {
             R.id.nav_latest -> {
                 openFragment(LatestFragment())
