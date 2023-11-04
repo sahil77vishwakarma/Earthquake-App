@@ -1,4 +1,4 @@
-package news
+package com.example.quakereport.news
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

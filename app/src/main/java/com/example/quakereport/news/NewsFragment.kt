@@ -1,4 +1,4 @@
-package news
+package com.example.quakereport.news
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -21,7 +21,7 @@ import com.example.quakereport.MySingleton
 import com.example.quakereport.R
 
 
-class NewsFragment : Fragment(),NewsItemClicked {
+class NewsFragment : Fragment(), NewsItemClicked {
     lateinit var mAdapter: NewsListAdapter
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

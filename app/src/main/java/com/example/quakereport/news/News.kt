@@ -1,4 +1,4 @@
-package news
+package com.example.quakereport.news
 
 data class News(
     val title: String,
