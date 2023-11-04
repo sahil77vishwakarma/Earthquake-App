@@ -4,4 +4,10 @@
     <string name="nav_close">Close Navigation Drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bePreparedToReact">Know how to react so your response to a quake is automatic. If an earthquake struck right now, how would you protect yourself?</string>
+    <string name="knowYourLocation">Identify safe spaces in the room: under a desk, along interior walls, away from windows, bookcases, and picture frames. Plan your response: know how to exit the building after an earthquake (not during) - even if the lights are off.</string>
+    <string name="stockUpOnYourEmergencySupplies">The basics: flashlight, bottled water, and food for 72 hours; first-aid kit, gloves, hard hat, goggles, blankets, and closed-toe shoes.</string>
+    <string name="arrangeYourRoomForSafety">Make sure that bookcases, large file cabinets, and artwork on walls are anchored. Store heavy objects on low shelves. Put breakable objects in cabinets with latches.</string>
+    <string name="knowTheBuildingEvacuationPoint">Be familiar with the established gathering on building for major emergencies.</string>
+    <string name="indoorsDuringAnEarthquake">• Move away from windows, bookcases, and large objects.\n• Go to a safe location - under a desk, a table, or along an interior wall.\n• If you have no protection: drop to the floor, and cover your head and face.\n• Stay under cover until after the shaking stops, and you are sure that debris is no longer falling.\n• Do not stand in a doorway, as some previoussafety guidelines recommended. A swinging doorcan cause injuries.\n• In a crowded place, do not rush to the exit. More injuries are caused by panic than by earthquakes themselves.</string>
 </resources>

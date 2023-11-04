@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#08000000"
+    android:orientation="vertical"
+    android:id="@+id/survivalTipsLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Survival Tips"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Before the Earthquake"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/check_circle_outline_24" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Be prepared to react"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black" />
+                        <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bePreparedToReact"
+                        android:textSize="16sp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Know your location"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/knowYourLocation"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Stock up on your emergency supplies"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/stockUpOnYourEmergencySupplies"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Arrange your room for safety"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/arrangeYourRoomForSafety"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Know the building evacuation points points"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/knowTheBuildingEvacuationPoint"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="During an Earthquake"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Remain calm as the earthquake occurs-others will respond to your actions"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Staying calm in groups of people is crucial and can prevent panic."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="If you are indoors during an earthquake, stay there"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/indoorsDuringAnEarthquake"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="If you are outdoors..."
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Move to an open area, away from falling objects, and drop to the ground. Stay away from buildings, power lines and trees."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="After an Earthquake"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Check yourself and others for injuries"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Give first aid for serious injuries. DO NOT move injured people unless they are in danger."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Expect aftershocks"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="There will be large aftershocks after a major earthquake be on alert for them."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Be ready to respond without electricity or lights"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Know where your flashlight is. Know how to find stairs in the dark."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Get to your emergency supplies"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Put on your helmet, gloves, and closed-toe shoes."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Beware of objects that moved during
+
+the earthquake"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="They may fall long after a quake ends."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="If you must leave a building after an earthquake, use EXTREME caution"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="A large number of injuries in an earthquake occur when people leave a building after a quake and are struck by falling debris. Check your exit. If you have to leave a building, be sure the exit is safe."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingBottom="10dp"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/check_circle_outline_24"
+                            android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Use telephones only to report a life- threatening emergency"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Using cell phones or land lines during an emergency will jam telephone systems, preventing emergency calls from going through."
+                                android:textSize="16sp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="#A9000000" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source: UCLA"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

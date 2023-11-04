@@ -18,13 +18,6 @@ android {
     }
 
     buildTypes {
-        debug {
-            applicationIdSuffix ".debug"
-            versionNameSuffix "-DEBUG"
-            debuggable true // Ensure debuggable is set to true
-            // Other debug-specific configurations
-        }
-
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -65,5 +58,8 @@ dependencies {
 
     //crome custom tabs
     implementation 'androidx.browser:browser:1.5.0'
+
+//    image slider
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
 
 }
