@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MeasuresFragment">
+    android:id="@+id/measuresFragmentMain"
+    tools:context="measures.MeasuresFragment"
+    android:layout_marginTop="40dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Measures Fragment"
-        android:textColor="@color/red"
-        android:textSize="36sp" />
-</FrameLayout>
+        android:id="@+id/card_btn_measures"
+        android:visibility="gone">
+
+        <include
+            layout="@layout/measures_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/survivalTips1"
+        android:visibility="visible">
+
+        <include
+            layout="@layout/survival_tips_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+
+
+
+
+</RelativeLayout>

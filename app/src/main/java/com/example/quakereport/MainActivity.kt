@@ -2,7 +2,6 @@ package com.example.quakereport
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -13,6 +12,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.quakereport.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
+import measures.MeasuresFragment
 
 class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
 
@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         openFragment(NewsFragment())                                                                /// to open the default news section
-
         setSupportActionBar(binding.toolbar)
+
 
         toggle = ActionBarDrawerToggle(this,binding.drawerLayout, binding.toolbar, R.string.nav_open, R.string.nav_close)
         binding.drawerLayout.addDrawerListener(toggle)
@@ -104,13 +104,14 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     }
 
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.tool_bar_menu_item, menu)
         return true
     }
 
 
     ////Handling the backPressed button and drawer
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)){
             binding.drawerLayout.closeDrawer(GravityCompat.START)
