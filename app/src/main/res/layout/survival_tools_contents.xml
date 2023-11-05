@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Survival Tools"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_margin="20dp"
+        />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2">
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#1A0B03FB">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/first_add_kit"
+                    android:background="@drawable/round_back_light_1000"
+                    android:layout_marginTop="30dp"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Survival Tips"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules for saving your life "
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in case of earthquake"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#1A0B03FB">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/battery"
+                    android:background="@drawable/round_back_light_1000"
+                    android:layout_marginTop="30dp"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Survival Tips"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules for saving your life "
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in case of earthquake"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/alertSound"
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#1A0B03FB">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/volume"
+                    android:background="@drawable/round_back_light_1000"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Survival Tips"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules for saving your life "
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in case of earthquake"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#1A0B03FB">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/report"
+                    android:background="@drawable/round_back_light_1000"
+                    android:layout_marginTop="30dp"
+                    android:padding="6dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Survival Tips"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules for saving your life "
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in case of earthquake"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#1A0B03FB">
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/idea"
+                    android:background="@drawable/round_back_light_1000"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Survival Tips"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules for saving your life "
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="in case of earthquake"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </GridLayout>
+
+</LinearLayout>

@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
-import com.example.quakereport.MySingleton
+import com.example.quakereport.screens.MySingleton
 import com.example.quakereport.R
 
 
@@ -91,6 +91,5 @@ class NewsFragment : Fragment(), NewsItemClicked {
         val customTabsIntent = builder.build()
         customTabsIntent.launchUrl(requireContext(),Uri.parse(item.url))
     }
-
 
 }
