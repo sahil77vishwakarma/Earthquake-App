@@ -1,16 +1,11 @@
-package com.example.quakereport.Latest
+package com.example.quakereport.latest
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.example.quakereport.R
-import com.example.quakereport.news.News
-import com.example.quakereport.news.NewsItemClicked
-import com.example.quakereport.news.NewsViewHolder
 
 class LatestListAdapter(private val listener: QuakeItemClicked): RecyclerView.Adapter<QuakeViewHolder>()  {
 

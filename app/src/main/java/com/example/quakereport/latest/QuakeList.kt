@@ -1,4 +1,4 @@
-package com.example.quakereport.Latest
+package com.example.quakereport.latest
 
 data class QuakeList(
     val mag: String,

@@ -11,10 +11,11 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.quakereport.Latest.LatestFragment
+import com.example.quakereport.latest.LatestFragment
 import com.example.quakereport.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
-import measures.MeasuresFragment
+import com.example.quakereport.measures.MeasuresFragment
+import com.example.quakereport.screens.PredictionFragment
 
 class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
 
@@ -30,7 +31,10 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         setSupportActionBar(binding.toolbar)
 
 
-        toggle = ActionBarDrawerToggle(this,binding.drawerLayout, binding.toolbar, R.string.nav_open, R.string.nav_close)
+        toggle = ActionBarDrawerToggle(this,binding.drawerLayout, binding.toolbar,
+            R.string.nav_open,
+            R.string.nav_close
+        )
         binding.drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
 
@@ -48,9 +52,9 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
                     openFragment(LatestFragment())
                     binding.navigationDrawer.menu.findItem(R.id.nav_latest)?.isChecked = true
                 }
-                R.id.bottom_map -> {
-                    openFragment(MapFragment())
-                    binding.navigationDrawer.menu.findItem(R.id.nav_maps)?.isChecked = true
+                R.id.bottom_prediction -> {
+                    openFragment(PredictionFragment())
+                    binding.navigationDrawer.menu.findItem(R.id.nav_prediction)?.isChecked = true
                 }
                 R.id.bottom_measures -> {
                     openFragment(MeasuresFragment())
@@ -76,11 +80,12 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         when (item.itemId) {
             R.id.nav_latest -> {
                 openFragment(LatestFragment())
-                binding.bottomNavigation.selectedItemId = R.id.bottom_latest                         // Highlight the corresponding item in BottomNavigationView
+                binding.bottomNavigation.selectedItemId =
+                    R.id.bottom_latest                         // Highlight the corresponding item in BottomNavigationView
             }
-            R.id.nav_maps -> {
-                openFragment(MapFragment())
-                binding.bottomNavigation.selectedItemId = R.id.bottom_map
+            R.id.nav_prediction -> {
+                openFragment(PredictionFragment())
+                binding.bottomNavigation.selectedItemId = R.id.bottom_prediction
             }
             R.id.nav_measures -> {
                 openFragment(MeasuresFragment())
@@ -112,7 +117,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     }
 
 
-    ////Handling the backPressed button and drawer
+    //Handling the backPressed button and drawer
     @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -121,6 +126,5 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             super.getOnBackPressedDispatcher().onBackPressed()
         }
     }
-
 
 }

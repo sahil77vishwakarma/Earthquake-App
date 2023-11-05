@@ -1,4 +1,4 @@
-package com.example.quakereport.Latest
+package com.example.quakereport.latest
 
 import android.graphics.Bitmap
 import android.net.Uri
@@ -17,10 +17,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
-import com.example.quakereport.MySingleton
+import com.example.quakereport.screens.MySingleton
 import com.example.quakereport.R
-import com.example.quakereport.news.News
-import com.example.quakereport.news.NewsListAdapter
 
 class LatestFragment : Fragment(),QuakeItemClicked{
     lateinit var mAdapter: LatestListAdapter

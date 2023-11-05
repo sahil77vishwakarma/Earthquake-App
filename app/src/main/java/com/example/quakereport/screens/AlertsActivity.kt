@@ -1,8 +1,9 @@
-package com.example.quakereport
+package com.example.quakereport.screens
 
 import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.quakereport.R
 
 class AlertsActivity : AppCompatActivity() {
 

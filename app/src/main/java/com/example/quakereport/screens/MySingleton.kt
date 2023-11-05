@@ -1,4 +1,4 @@
-package com.example.quakereport
+package com.example.quakereport.screens
 
 import android.content.Context
 import com.android.volley.Request

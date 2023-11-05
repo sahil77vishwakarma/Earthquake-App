@@ -15,12 +15,12 @@
             android:title="News"/>
 
         <item
-            android:id="@+id/nav_maps"
-            android:title="Maps"/>
-
-        <item
             android:id="@+id/nav_latest"
             android:title="Latest"/>
+
+        <item
+            android:id="@+id/nav_prediction"
+            android:title="Prediction"/>
 
         <item
             android:id="@+id/nav_measures"

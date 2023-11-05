@@ -1,4 +1,4 @@
-package measures
+package com.example.quakereport.measures
 
 import android.view.LayoutInflater
 import android.view.View

@@ -1,4 +1,4 @@
-package measures
+package com.example.quakereport.measures
 
 import androidx.viewpager2.widget.ViewPager2
 
