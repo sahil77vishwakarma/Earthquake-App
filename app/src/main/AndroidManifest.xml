@@ -15,6 +15,9 @@
         android:theme="@style/Theme.QuakeReport"
         tools:targetApi="31">
         <activity
+            android:name=".screens.MapActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -24,7 +27,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".screens.SurvivalToolsContents" />
-
     </application>
 
 </manifest>

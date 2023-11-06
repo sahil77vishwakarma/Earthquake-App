@@ -1,5 +1,6 @@
 package com.example.quakereport.latest
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
@@ -19,10 +20,12 @@ import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.example.quakereport.screens.MySingleton
 import com.example.quakereport.R
+import com.example.quakereport.screens.MapActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class LatestFragment : Fragment(),QuakeItemClicked{
     lateinit var mAdapter: LatestListAdapter
-
+    val quakeArray = ArrayList<QuakeList>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,6 +40,17 @@ class LatestFragment : Fragment(),QuakeItemClicked{
         mAdapter = LatestListAdapter(this)
         recyclerView.adapter = mAdapter
 
+
+//        //HANDLING ONCLICK OF FLOATING ACTION BUTTON
+//        val fabViewMap = view.findViewById<FloatingActionButton>(R.id.view_map)
+//        fabViewMap.setOnClickListener {
+//            // Create an Intent to start the NewMapActivity
+//            val intent = Intent(requireContext(), MapActivity::class.java)
+//            intent.putExtra("quakeArray", quakeArray)
+//            // Start the activity
+//            startActivity(intent)
+//        }
+
         return view
     }
 
@@ -50,7 +64,6 @@ class LatestFragment : Fragment(),QuakeItemClicked{
             null,
             {
                 val earthQuakeJsonArray = it.getJSONArray("features")
-                val quakeArray = ArrayList<QuakeList>()
                 for(i in 0 until earthQuakeJsonArray.length()) {
                     val quakeJsonObject = earthQuakeJsonArray.getJSONObject(i)
                     val sourceJsonObject = quakeJsonObject.getJSONObject("properties")
