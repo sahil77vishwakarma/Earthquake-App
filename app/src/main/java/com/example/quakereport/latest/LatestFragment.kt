@@ -55,7 +55,7 @@ class LatestFragment : Fragment(),QuakeItemClicked{
     }
 
     private fun fetchData() {
-        val url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-01-01&endtime=2023-11-02&minfelt=50&minmagnitude=5"
+        val url = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2023-09-01&endtime=2023-11-02&minfelt=50&minmagnitude=3"
 
         //https://newsapi.org/v2/everything?q=earthquake AND magnitude&sources=bbc-news,time,abc-news,cbc-news&apiKey=3798bbe662c0440f8e3263114f32a11b
         val jsonObjectRequest = JsonObjectRequest(
@@ -68,12 +68,18 @@ class LatestFragment : Fragment(),QuakeItemClicked{
                     val quakeJsonObject = earthQuakeJsonArray.getJSONObject(i)
                     val sourceJsonObject = quakeJsonObject.getJSONObject("properties")
 
-                    val news = QuakeList(
-                        sourceJsonObject.getString("mag"),
-                        sourceJsonObject.getString("place"),
-                        sourceJsonObject.getString("url"),
-                    )
-                    quakeArray.add(news)
+                    val mag = sourceJsonObject.getString("mag")
+                    val place = sourceJsonObject.optString("place")
+
+                    // Check if place is not null or empty before adding it to the quakeArray
+                    if (place != "null") {
+                        val news = QuakeList(
+                            mag,
+                            place,
+                            sourceJsonObject.getString("url")
+                        )
+                        quakeArray.add(news)
+                    }
                 }
                 mAdapter.updateQuakeList(quakeArray)
             },
