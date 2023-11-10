@@ -1,5 +1,6 @@
 package com.example.quakereport
 
+import android.content.Intent
 import com.example.quakereport.news.NewsFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,7 @@ import com.example.quakereport.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.example.quakereport.measures.MeasuresFragment
 import com.example.quakereport.screens.PredictionFragment
+import com.example.quakereport.screens.ProfileImagePicker
 
 class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
 
@@ -110,10 +112,36 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         fragmentTransaction.commit()
     }
 
-
+    // HANDLING THE OPENING MENU LIST IN APPBAR
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.tool_bar_menu_item, menu)
         return true
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.optAccount -> {
+                showToast("You clicked 'Account'")
+                val intent = Intent(this, ProfileImagePicker::class.java)
+                startActivity(intent)
+                true
+            }
+
+            R.id.optShare -> {
+                showToast("You clicked 'Share'")
+                true
+            }
+
+            R.id.optAbout -> {
+                showToast("You clicked 'About'")
+                true
+            }
+            else -> super.onContextItemSelected(item)
+        }
+    }
+
+    private fun showToast(s: String) {
+        Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
     }
 
 

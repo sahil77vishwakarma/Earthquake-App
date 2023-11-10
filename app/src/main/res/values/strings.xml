@@ -10,4 +10,9 @@
     <string name="arrangeYourRoomForSafety">Make sure that bookcases, large file cabinets, and artwork on walls are anchored. Store heavy objects on low shelves. Put breakable objects in cabinets with latches.</string>
     <string name="knowTheBuildingEvacuationPoint">Be familiar with the established gathering on building for major emergencies.</string>
     <string name="indoorsDuringAnEarthquake">• Move away from windows, bookcases, and large objects.\n• Go to a safe location - under a desk, a table, or along an interior wall.\n• If you have no protection: drop to the floor, and cover your head and face.\n• Stay under cover until after the shaking stops, and you are sure that debris is no longer falling.\n• Do not stand in a doorway, as some previoussafety guidelines recommended. A swinging doorcan cause injuries.\n• In a crowded place, do not rush to the exit. More injuries are caused by panic than by earthquakes themselves.</string>
+    <string name="refresh">Refresh</string>
+    <string name="filter">Filter</string>
+    <string name="account">Account</string>
+    <string name="share">Share</string>
+    <string name="about">About</string>
 </resources>
