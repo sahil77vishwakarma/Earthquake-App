@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#FF3636</color>
     <color name="lightred">#E95858</color>
+    <color name="hintColor">#777777</color>
+    <color name="brownDark">#312222</color>
 
 
 
