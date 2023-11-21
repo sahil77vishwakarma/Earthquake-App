@@ -4,21 +4,47 @@
 
     <item
         android:id="@+id/refresh"
-        android:title="Refresh"
+        android:title="@string/refresh"
         android:icon="@drawable/baseline_refresh_24"
-        android:contentDescription="Refresh"
+        android:contentDescription="@string/refresh"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/filter"
-        android:title="Filter"
+        android:title="@string/filter"
         android:icon="@drawable/toolbar_filter_vector"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/more"
-        android:title="More"
+        android:title="more"
+        android:icon="@drawable/ic_more_vert"
         android:contentDescription="More"
-        app:showAsAction="never"/>
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/optAccount"
+                android:title="@string/account"
+                android:icon="@drawable/ic_person_24"
+                app:showAsAction="never"
+                android:titleCondensed="Account"
+                android:textColor="#000000" /> <!-- Add text color here -->
+            <item
+                android:id="@+id/optShare"
+                android:title="@string/share"
+                android:icon="@drawable/ic_share_24"
+                app:showAsAction="never"
+                android:titleCondensed="Share"
+                android:textColor="#000000" /> <!-- Add text color here -->
+            <item
+                android:id="@+id/optAbout"
+                android:title="@string/about"
+                android:icon="@drawable/ic_info_24"
+                app:showAsAction="never"
+                android:titleCondensed="About"
+                android:textColor="#000000" /> <!-- Add text color here -->
+        </menu>
+    </item>
+
 
 </menu>

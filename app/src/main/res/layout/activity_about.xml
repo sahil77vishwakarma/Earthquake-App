@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/eye_injury"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EarthQuake Application"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About the Earthquake App"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Earthquake App, your trusted companion for staying informed about recent seismic activities worldwide and exploring the exciting realm of earthquake prediction. Our mission is to empower individuals with accurate earthquake data, helping you prepare for and respond to seismic events more effectively."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Key Features:"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Real-time Earthquake Updates: "
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay up-to-date with the latest earthquake information from around the globe. Our app provides real-time data sourced from reliable authorities like the United States Geological Survey (USGS), ensuring you receive accurate and timely alerts."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2. Interactive Maps:"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=": Explore earthquake locations with interactive maps that allow you to zoom in on specific regions. Get a visual understanding of where seismic activity is occurring."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Historical Data: "
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dive into historical earthquake data to understand past trends and patterns. Learn from the past to prepare for the future."/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4. Prediction Insights (Coming Soon): "
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We are actively researching earthquake prediction models and working with seismologists to provide you with valuable insights into potential seismic events. Please note that earthquake prediction is a complex field with inherent uncertainties."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. User Reporting:"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Be an active part of the
+earthquake monitoring community. Report your observations and contribute to the collective knowledge about seismic events."/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Commitment:"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Earthquake App is committed to transparency, accuracy, and user safety. While we strive to provide the most reliable information and, in the future, predictive insights, it's essential to remember that earthquake prediction is a challenging endeavor with no guaranteed accuracy. We recommend using our app as a supplementary tool to official emergency alerts and preparedness measures."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Involved:"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We value your feedback and encourage you to reach out with suggestions, questions, or any observations you'd like to share. Together, we can enhance earthquake awareness and safety for everyone."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Legal Notice:"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please review our terms of use and privacy policy to understand how we handle your data and use of the app. Thank you for choosing the Earthquake App. We're here to help you navigate the dynamic world of seismic activity and, most importantly, to help you stay safe. Download the app now and embark on your journey to earthquake awareness and preparedness!"/>
+
+
+    </LinearLayout>
+</ScrollView>
