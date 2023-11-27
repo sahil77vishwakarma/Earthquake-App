@@ -4,4 +4,5 @@
         <item name="android:scaleX">1.5</item>
         <item name="android:scaleY">1.5</item>
     </style>
+
 </resources>

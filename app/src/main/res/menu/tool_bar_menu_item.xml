@@ -21,28 +21,22 @@
         android:icon="@drawable/ic_more_vert"
         android:contentDescription="More"
         app:showAsAction="always">
-        <menu>
+        <menu android:theme="@style/SubMenuTextStyle">
             <item
-                android:id="@+id/optAccount"
+                android:id="@+id/AccountOption"
                 android:title="@string/account"
                 android:icon="@drawable/ic_person_24"
+                android:iconTint="@color/hintColor"
                 app:showAsAction="never"
-                android:titleCondensed="Account"
-                android:textColor="#000000" /> <!-- Add text color here -->
+                android:titleCondensed="Account" />
+
             <item
-                android:id="@+id/optShare"
-                android:title="@string/share"
-                android:icon="@drawable/ic_share_24"
-                app:showAsAction="never"
-                android:titleCondensed="Share"
-                android:textColor="#000000" /> <!-- Add text color here -->
-            <item
-                android:id="@+id/optAbout"
+                android:id="@+id/AboutOption"
                 android:title="@string/about"
                 android:icon="@drawable/ic_info_24"
+                android:iconTint="@color/hintColor"
                 app:showAsAction="never"
-                android:titleCondensed="About"
-                android:textColor="#000000" /> <!-- Add text color here -->
+                android:titleCondensed="About" />
         </menu>
     </item>
 

@@ -4,9 +4,33 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_marginTop="30dp"
     android:orientation="vertical"
     tools:context=".screens.ProfileActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingVertical="12dp">
+
+        <ImageView
+            android:id="@+id/accountBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="Back"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingRight="40dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -27,7 +51,6 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_mode_edit_24"
-            android:tooltipText="Edit"
             android:layout_alignEnd="@+id/profile_image"
             android:layout_alignBottom="@id/profile_image"
             android:importantForAccessibility="no" />
@@ -39,17 +62,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="User"
+            android:text="Username1"
+            android:id="@+id/UserName"
             android:textSize="18sp"
             android:textStyle="bold"
             android:layout_gravity="center"/>
         <ImageButton
+            android:id="@+id/editUserName"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:src="@drawable/ic_mode_edit_24"
@@ -61,7 +86,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="username@gmailcom"
+        android:text="username1@gmailcom"
         android:textSize="18sp"
         android:layout_gravity="center_horizontal"/>
     <LinearLayout
@@ -95,8 +120,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Sign Out"
-        android:layout_marginTop="40dp"
         android:layout_gravity="center_horizontal"/>
 
 

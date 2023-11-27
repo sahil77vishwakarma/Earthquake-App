@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
@@ -15,8 +16,9 @@ import com.example.quakereport.latest.LatestFragment
 import com.example.quakereport.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import com.example.quakereport.measures.MeasuresFragment
+import com.example.quakereport.screens.AboutScreen
+import com.example.quakereport.screens.AccountScreen
 import com.example.quakereport.screens.PredictionFragment
-import com.example.quakereport.screens.ProfileImagePicker
 
 class HomeScreen : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
 
@@ -67,25 +69,6 @@ class HomeScreen : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLi
 
     }
 
-    //Handling the onclick of the Toolbar item
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.refresh -> {
-                // Get the instance of LatestFragment
-
-            }
-            R.id.filter -> {
-                // Perform action for menu item 2
-                return true
-            }
-            R.id.more -> {
-                // Perform action for menu item 2
-                return true
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
-
 
     //// Handling the on clicks of the Navigation drawer
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -107,13 +90,13 @@ class HomeScreen : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLi
                 openFragment(NewsFragment())
                 binding.bottomNavigation.selectedItemId = R.id.bottom_news
             }
-            R.id.nav_setting -> {
+            R.id.nav_account -> {
                 //Open the Account page
-
+                startActivity(Intent(this,AccountScreen::class.java))
             }
             R.id.nav_about -> {
                 //Open the About page
-
+                startActivity(Intent(this, AboutScreen::class.java))
             }
 
         }
@@ -136,23 +119,28 @@ class HomeScreen : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLi
         return true
     }
 
-    override fun onContextItemSelected(item: MenuItem): Boolean {
+
+    //HANDLING THE CLICK OF APPBAR ITEMS
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.optAccount -> {
-                showToast("You clicked 'Account'")
-                val intent = Intent(this, ProfileImagePicker::class.java)
-                startActivity(intent)
+            R.id.AccountOption -> {
+                startActivity(Intent(this, AccountScreen::class.java))
                 true
             }
 
-            R.id.optShare -> {
-                showToast("You clicked 'Share'")
+            R.id.AboutOption -> {
+                startActivity(Intent(this, AboutScreen::class.java))
                 true
             }
 
-            R.id.optAbout -> {
-                showToast("You clicked 'About'")
-                true
+            R.id.filter -> {
+                // Perform action for menu item 2
+                return true
+            }
+
+            R.id.more -> {
+                // Perform action for menu item 2
+                return true
             }
             else -> super.onContextItemSelected(item)
         }
@@ -172,5 +160,6 @@ class HomeScreen : AppCompatActivity(),NavigationView.OnNavigationItemSelectedLi
             super.getOnBackPressedDispatcher().onBackPressed()
         }
     }
+
 
 }

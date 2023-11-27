@@ -8,6 +8,7 @@
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.flash" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -21,20 +22,20 @@
         android:theme="@style/Theme.QuakeReport"
         tools:targetApi="31">
         <activity
-            android:name=".SignUpActivity"
+            android:name=".screens.AccountScreen"
             android:exported="false" />
         <activity
-            android:name=".LoginScreen"
+            android:name=".screens.AboutScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Authentication.LoginScreen"
             android:exported="false" />
         <activity
             android:name=".screens.WelcomeScreen"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".screens.FlashLightActivity"
             android:exported="false" />
@@ -49,7 +50,13 @@
             android:exported="false" />
         <activity
             android:name=".HomeScreen"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
